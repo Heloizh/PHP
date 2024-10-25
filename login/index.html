@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .login-container p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-btn, .google-btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .login-btn {
+            background-color: #000;
+            color: #fff;
+        }
+        .google-btn {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .google-btn img {
+            margin-right: 10px;
+        }
+        .forgot-password, .signup-link {
+            display: block;
+            margin-top: 15px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h1>Welcome back</h1>
+    <p>Please enter your details.</p>
+    
+    <form action="login.php" method="POST">
+        <input type="email" name="email" class="input-field" placeholder="Enter your email" required>
+        <input type="password" name="password" class="input-field" placeholder="Password" required>
+        
+        <a href="#" class="forgot-password">Forgot password?</a>
+        
+        <button type="submit" class="login-btn">Login</button>
+    </form>
+    
+    <button class="google-btn">
+        <img src="https://img.icons8.com/color/16/000000/google-logo.png"/> Sign in with Google
+    </button>
+
+    <a href="#" class="signup-link">Don't have an account? Sign up for free</a>
+</div>
+
+</body>
+</html>
